@@ -8,11 +8,13 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_snippets-{{ version }}.tar.gz
   sha256: e91695a1d892d334984e7afac189150b3d89e4f532247b3dec8bc197a11442f0
+  patches:
+    - py39.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -43,3 +45,4 @@ extra:
     - samwaseda
     - jan-janssen
     - niklassiemer
+    - pyiron-runner
