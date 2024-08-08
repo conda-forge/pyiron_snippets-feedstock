@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyiron_snippets-{{ version }}.tar.gz
   sha256: 5664f54e8326d4e2ba4ee03467754bccd58dcd81a17f358a297dff58f082c1f0
-  patches:
-    - py39.patch
 
 build:
   noarch: python
