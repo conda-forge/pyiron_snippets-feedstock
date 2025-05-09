@@ -27,7 +27,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-pyiron_snippets-green.svg)](https://anaconda.org/conda-forge/pyiron_snippets) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyiron_snippets.svg)](https://anaconda.org/conda-forge/pyiron_snippets) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyiron_snippets.svg)](https://anaconda.org/conda-forge/pyiron_snippets) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyiron_snippets.svg)](https://anaconda.org/conda-forge/pyiron_snippets) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyiron__snippets-green.svg)](https://anaconda.org/conda-forge/pyiron_snippets) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyiron_snippets.svg)](https://anaconda.org/conda-forge/pyiron_snippets) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyiron_snippets.svg)](https://anaconda.org/conda-forge/pyiron_snippets) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyiron_snippets.svg)](https://anaconda.org/conda-forge/pyiron_snippets) |
 
 Installing pyiron_snippets
 ==========================
