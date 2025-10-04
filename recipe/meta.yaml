@@ -1,6 +1,6 @@
 {% set name = "pyiron_snippets" %}
-{% set version = "0.2.0" %}
-{% set python_min = "3.10" %}
+{% set version = "1.0.0" %}
+{% set python_min = "3.11" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyiron_snippets-{{ version }}.tar.gz
-  sha256: c46532fe476c79d1182477709b7fa8a66c92e3ae6082c6ccfc0ebef1f69ed046
+  sha256: 8092c25ce25d36ff542921a5e745e6c4be7762ac95173c7e7cd783aa96a1fae9
 
 build:
   noarch: python
@@ -18,9 +18,9 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools
-    - versioneer ==0.29
     - pip
+    - hatchling ==1.27.0
+    - hatch-vcs ==0.5.0
   run:
     - python >={{ python_min }},<3.14
 
