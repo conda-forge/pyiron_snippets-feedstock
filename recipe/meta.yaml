@@ -1,5 +1,5 @@
 {% set name = "pyiron_snippets" %}
-{% set version = "1.3.0" %}
+{% set version = "1.4.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyiron_snippets-{{ version }}.tar.gz
-  sha256: bf4f9a7956812bda53890f7aadde3acb86d4f5d90d766e4bac11abd265ee2e50
+  sha256: 9462fac645e2b4a60118415d22e49ae71ad6488066f277c4d60b20dc5f07bc8c
 
 build:
   noarch: python
