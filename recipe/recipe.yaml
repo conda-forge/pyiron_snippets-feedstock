@@ -1,0 +1,49 @@
+schema_version: 1
+
+context:
+  name: pyiron_snippets
+  version: "1.5.0"
+  python_min: "3.11"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/pyiron_snippets-${{ version }}.tar.gz
+  sha256: 1f7a77bb609b7e72735b7e4de9f1691ba0d348008c49026d28ee1a2b93608c60
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python 3.11.*
+    - pip
+    - hatchling ==1.28.0
+    - hatch-vcs ==0.5.0
+  run:
+    - python >=${{ python_min }},<3.15
+
+tests:
+  - python:
+      imports:
+        - pyiron_snippets
+      pip_check: true
+      python_version: ${{ python_min }}
+
+about:
+  summary: pyiron_snippets - Short, dependency-free python snippets.
+  license: BSD-3-Clause
+  license_file: LICENSE
+  homepage: https://github.com/pyiron/pyiron_snippets
+
+extra:
+  recipe-maintainers:
+    - liamhuber
+    - samwaseda
+    - jan-janssen
+    - niklassiemer
+    - pyiron-runner
