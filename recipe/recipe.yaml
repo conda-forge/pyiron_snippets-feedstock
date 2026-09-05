@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: pyiron_snippets
   version: "1.5.0"
-  python_min: "3.11"
 
 package:
   name: ${{ name|lower }}
@@ -20,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python 3.11.*
+    - python ${{ python_min }}.*
     - pip
     - hatchling ==1.28.0
     - hatch-vcs ==0.5.0
@@ -32,7 +31,9 @@ tests:
       imports:
         - pyiron_snippets
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
 
 about:
   summary: pyiron_snippets - Short, dependency-free python snippets.
