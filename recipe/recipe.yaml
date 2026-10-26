@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pyiron_snippets
-  version: "1.5.0"
+  version: "1.5.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/pyiron_snippets-${{ version }}.tar.gz
-  sha256: 1f7a77bb609b7e72735b7e4de9f1691ba0d348008c49026d28ee1a2b93608c60
+  sha256: e7eb9d0495d58a422ca11c0a69fc4d25d3976dc598c47d1b3ecc4bb170efa14c
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
